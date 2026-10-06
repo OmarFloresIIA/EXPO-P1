@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERGON - Gestión Centralizada</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #F0C808;
+            --black: #111111;
+            --white: #FFFFFF;
+            --gray-light: #F4F4F4;
+            --gray-dark: #333333;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--gray-light);
+            color: var(--black);
+        }
+        header {
+            background-color: var(--black);
+            color: var(--white);
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 5px solid var(--primary);
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: var(--primary);
+            text-transform: uppercase;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: var(--primary);
+        }
+        .hero {
+            background-color: var(--white);
+            padding: 6rem 5%;
+            text-align: center;
+            border-bottom: 1px solid #EAEAEA;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--black);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--gray-dark);
+            max-width: 800px;
+            margin: 0 auto 2.5rem auto;
+            line-height: 1.6;
+        }
+        .btn {
+            background-color: var(--primary);
+            color: var(--black);
+            padding: 0.9rem 2.5rem;
+            font-weight: 800;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: transform 0.2s, background 0.3s;
+            display: inline-block;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            background-color: #D4B007;
+        }
+        .section-title {
+            text-align: center;
+            margin: 4rem 0 2rem 0;
+            font-size: 2.2rem;
+        }
+        .modules {
+            padding: 0 5% 5rem 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+            border-top: 4px solid var(--black);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-top-color: var(--primary);
+        }
+        .card h3 {
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        .card p {
+            color: var(--gray-dark);
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+        }
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .tag {
+            background: var(--gray-light);
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--black);
+        }
+        .db-queries {
+            background-color: var(--black);
+            color: var(--white);
+            padding: 5rem 5%;
+        }
+        .db-queries h2 {
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.2rem;
+        }
+        .query-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .query-card {
+            background: #1A1A1A;
+            padding: 2rem;
+            border-left: 3px solid var(--primary);
+            border-radius: 4px;
+        }
+        .query-card h4 {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+        .query-card p {
+            color: #CCCCCC;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .footer {
+            background: var(--black);
+            color: #888888;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            border-top: 1px solid #222222;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ERGON</div>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#clientes">Clientes</a></li>
+                <li><a href="#operaciones">Operaciones</a></li>
+                <li><a href="#logistica">Logística</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Sistema Centralizado ERGON</h1>
+        <p>Solución integral para la gestión de ventas, logística y comercialización de productos. Consolidamos en una sola base de datos nuestro catálogo de aceites industriales, la cartera de clientes B2B, red de sucursales y operaciones de transporte.</p>
+        <a href="#modulos" class="btn">Explorar Módulos</a>
+    </section>
+
+    <h2 class="section-title" id="modulos">Módulos del Sistema</h2>
+    <section class="modules">
+        <!-- Productos -->
+        <div class="card" id="productos">
+            <h3>Líneas de Producto</h3>
+            <p>Gestión estricta de nuestro catálogo de aceites industriales con claves únicas. Registro detallado de costos de producción y precios de venta unitarios en USD.</p>
+            <div class="tag-container">
+                <span class="tag">Hyvolt</span>
+                <span class="tag">Omnigold</span>
+                <span class="tag">Hyprene</span>
+            </div>
+        </div>
+
+        <!-- Clientes -->
+        <div class="card" id="clientes">
+            <h3>Cartera de Clientes B2B</h3>
+            <p>Clasificación de entidades adquirientes considerando su información fiscal para cumplimiento normativo y red de sucursales operativas para entrega.</p>
+            <div class="tag-container">
+                <span class="tag">Nacionales (RFC)</span>
+                <span class="tag">Exportación</span>
+                <span class="tag">Sucursales</span>
+            </div>
+        </div>
+
+        <!-- Ventas y Pedidos -->
+        <div class="card" id="operaciones">
+            <h3>Gestión de Ventas</h3>
+            <p>Registro transaccional de compras y detalles de venta. Cálculo automático y en tiempo real de los montos financieros y reportes comerciales.</p>
+            <div class="tag-container">
+                <span class="tag">Pendiente</span>
+                <span class="tag">Facturada</span>
+                <span class="tag">Entregada</span>
+                <span class="tag">Cancelada</span>
+            </div>
+        </div>
+
+        <!-- Logística y Envíos -->
+        <div class="card" id="logistica">
+            <h3>Logística y Transporte</h3>
+            <p>Administración del traslado de mercancía mediante empresas de paquetería clasificadas según su alcance. Monitoreo de envíos físicos, fechas de despacho y fletes.</p>
+            <div class="tag-container">
+                <span class="tag">Transporte Nacional</span>
+                <span class="tag">Agencias Aduanales</span>
+                <span class="tag">Guías de Rastreo</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="db-queries">
+        <h2>Reportes e Inteligencia de Negocio</h2>
+        <div class="query-grid">
+            <div class="query-card">
+                <h4>Rentabilidad de Pedidos</h4>
+                <p>Cálculo automático del monto total y utilidad total en USD a partir de cantidades, precios aplicados y costos de producción de cada detalle de venta.</p>
+            </div>
+            <div class="query-card">
+                <h4>Perfilamiento Fiscal</h4>
+                <p>Consultas estructuradas para obtener la información fiscal de cada cliente, distinguiendo entre regímenes nacionales e identificaciones de exportación.</p>
+            </div>
+            <div class="query-card">
+                <h4>Rastreo Logístico Integral</h4>
+                <p>Trazabilidad exacta para conocer quién, cuándo y dónde se entregó un pedido, integrando sucursal de destino, transportista, guías y costos del flete.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 ERGON - Sector Industrial de Especialidades Petroleras. Prototipo de base de datos.</p>
+    </footer>
+
+</body>
+</html>
