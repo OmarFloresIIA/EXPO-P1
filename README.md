@@ -8,7 +8,7 @@
      * Flores Olivares Omar
      * Roa Venegas Brenda
 ---
-**Página oficial del proyecto propio**
+[**Página oficial del proyecto propio**](https://omarfloresiia.github.io/EXPO-P1/)
 ---
 [**Proyecto Asignado (original)**](https://github.com/gabrielhuav/PublicMunicipalWorks_DWH)
 ---
