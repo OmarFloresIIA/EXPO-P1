@@ -18,9 +18,9 @@
 
 
 ## ÍNDICE
-1.- [Presentacion](./Presentacion/)
+1.- [Presentacion](https://github.com/OmarFloresIIA/EXPO-P1/blob/main/PRESENTACION.pdf)
 
-2.- [Fichas de los artículos](./Articulos/)
+2.- [Fichas de los artículos](https://github.com/OmarFloresIIA/EXPO-P1/blob/main/Ejercicio4.pdf)
 
 ## Aportaciones
 * **Roa Venegas Brenda:**
